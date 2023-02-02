@@ -1,0 +1,120 @@
+:root {
+    --border: rgb(163, 163, 163);
+    --displayBackground: rgb(185, 185, 185); 
+    --buttonBackground: rgba(214, 214, 214);
+    --buttonBackgroundHover: rgba(201, 200, 200);
+    --calcBackground: rgb(247, 247, 247);
+    --displayBorder: rgb(163, 163, 163);
+    --operatorBackground: rgb(192, 230, 236);
+    --operatorBackgroundHover: rgb(181, 217, 223);
+    --clearBackground: rgb(231, 185, 185);
+    --clearBackgroundHover: rgb(206, 166, 166);
+    --EraseBackground: rgb(198, 241, 163);
+    --EraseBackgroundHover: rgb(178, 216, 147);
+}
+
+#calcContainer {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid var(--border);
+    background-color: var(--calcBackground);
+    width: 250px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#buttonContainer {
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+}
+
+#prevEquation {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+#display {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 70px;
+    font-size: 60px;
+    border-bottom: 2px solid var(--displayBorder);
+}
+
+#divisionButton {
+    background-color: var(--operatorBackground);
+}
+
+#divisionButton:hover {
+    background-color: var(--operatorBackgroundHover);
+}
+
+#multiplicationButton {
+    background-color: var(--operatorBackground);
+}
+
+#multiplicationButton:hover {
+    background-color: var(--operatorBackgroundHover);
+}
+
+#subtractionButton {
+    background-color: var(--operatorBackground);
+}
+
+#subtractionButton:hover {
+    background-color: var(--operatorBackgroundHover);
+}
+
+#additionButton {
+    background-color: var(--operatorBackground);
+}
+
+#additionButton:hover {
+    background-color: var(--operatorBackgroundHover);
+}
+
+#clearButton {
+    background-color: var(--clearBackground);
+}
+
+#clearButton:hover {
+    background-color: var(--clearBackgroundHover);
+}
+
+#eraseButton {
+    background-color: var(--EraseBackground);
+}
+
+#eraseButton:hover {
+    background-color: var(--EraseBackgroundHover);
+}
+
+.Buttons {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 20%;
+    border: none;
+    padding: 20px;
+    background-color: var(--buttonBackground);
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.1s;
+}
+
+.Buttons:hover {
+    background-color: var(--buttonBackgroundHover);
+}
+
+
+
+h2 {
+    text-align: center;
+}
